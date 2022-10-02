@@ -1,0 +1,290 @@
+/* General Properties */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+button {
+    color: black !important;
+    background-color: white;
+    border: none !important;
+}
+
+.btn-nav-text {
+    font-size: 0.85em !important;
+    background-color: white !important;
+}
+
+.btn-nav-text:focus {
+    background-color: black !important;
+    color: white !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar,
+main {
+    max-width: 90em;
+    margin: auto !important;
+}
+
+/* Underline effect */
+
+button .underline {
+    width: 0;
+    transition: all 0.3s ease-out;
+    height: 0.15em;
+}
+
+a .underline {
+    position: absolute;
+    bottom: -0.2em;
+    width: 0;
+    height: 0.11em;
+    transition: width 0.1s ease-out;
+}
+
+a:hover .underline {
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    z-index: 3;
+}
+
+.navbar section {
+    left: 0 !important;
+    width: 100%;
+    top: 5em;
+}
+
+.navbar section .nav-pills i {
+    visibility: hidden;
+}
+
+.navbar section .nav-pills button:focus~i {
+    visibility: visible !important;
+}
+
+.navbar section .tab-content a:hover {
+    font-weight: bold !important
+}
+
+.navbar .collapse-img {
+    overflow: hidden !important;
+}
+
+.navbar .collapse-img img {
+    transition: all 0.2s ease-out;
+}
+
+.navbar .collapse-img:hover img {
+    transform: scale(1.05);
+}
+
+.offcanvas-body {
+    height: 100vh;
+}
+
+/* Carousel */
+
+.carousel-control {
+    width: 5em !important;
+}
+
+carousel-icon {
+    height: 2.5em !important;
+    width: 2.5em !important;
+}
+
+.carousel-inner .title {
+    font-size: clamp(0em, 3vw, 2.7em);
+    margin-bottom: clamp(0em, 1.2vw, 1.08em) !important;
+}
+
+.carousel-inner .caption {
+    font-size: clamp(0em, 1.2vw, 1.08em);
+    margin-bottom: clamp(0em, 2.4vw, 2.16em);
+}
+
+.carousel-inner .links {
+    font-size: clamp(0em, 0.9vw, 0.81em) !important;
+    margin-right: clamp(0em, 2vw, 1.8em);
+}
+
+.carousel-text-1 {
+    top: 35%;
+    left: 10%;
+}
+
+.carousel-text-2 {
+    top: 35%;
+    left: 55%;
+}
+
+.carousel-text-3 {
+    top: 35%;
+    left: 55%;
+}
+
+.carousel-inner .title-p {
+    font-size: 9vw;
+    margin-bottom: 6vw;
+}
+
+.carousel-inner .caption-p {
+    font-size: 3.6vw;
+    margin-bottom: 6vw;
+}
+
+.carousel-inner .links-p {
+    font-size: 3.6vw !important;
+    margin-bottom: 6vw;
+}
+
+.carousel-text-1p, .carousel-text-2p, .carousel-text-3p {
+    top: 7%;
+    left: 0;
+    right: 0;
+}
+
+/* This Week Highlights */
+
+.Highlights .active .underline {
+    width: 100%;
+}
+
+.tab-img-1 {
+    overflow: hidden;
+}
+
+.tab-img-1 img {
+    object-fit: cover;
+}
+
+.tab-img-1:hover img {
+    transform: scale(1.05);
+}
+
+.tab-img-1 .container-b {
+    top: 7%
+}
+
+.tab-img-1 .text-bottom {
+    top: 80%;
+}
+
+.tab-img-1 .container-s {
+    top: 65%;
+}
+
+@media (min-width: 768px) {
+    .tab-img-1 .container-b .title{
+        font-size: clamp(0em, 1.8vw, 1.62em);
+        margin-bottom: clamp(0em, 1.3vw, 1.17em);
+    }
+    
+    .tab-img-1 .container-b .caption {
+        font-size: clamp(0em, 1.1vw, 0.99em);
+    }
+    
+    .tab-img-1 .container-s .title{
+        font-size: clamp(0em, 1.2vw, 1.08em);
+        margin-bottom: clamp(0em, 0.4vw, 0.36em);
+    }
+    
+    .tab-img-1 .container-s .caption,
+    .tab-img-1 button {
+        font-size: clamp(0em, 0.9vw, 0.81em);
+    }
+    .tab-img-1:hover .caption {
+        opacity: 0;
+        top: -1vw;
+    }
+    
+    .tab-img-1:hover .container-b button {
+        top: -2vw;
+        opacity: 1;
+    }
+    
+    .tab-img-1:hover .container-s button {
+        top: -1vw;
+        opacity: 1;
+    }
+    .tab-img-1 button {
+        width: 7vw;
+        height: 2.5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .tab-img-1 .container-b .title{
+        font-size: 3.2vw;
+        margin-bottom: 2.6vw;
+    }
+    
+    .tab-img-1 .container-b .caption {
+        font-size: 2.2vw;
+    }
+    
+    .tab-img-1 .container-s .title{
+        font-size: 2.4vw;
+        margin-bottom: 0.8vw;
+    }
+    
+    .tab-img-1 .container-s .caption,
+    .tab-img-1 button {
+        font-size: 1.8vw;
+    }
+    .tab-img-1:hover .caption {
+        opacity: 0;
+        top: -2vw;
+    }
+    
+    .tab-img-1:hover .container-b button {
+        top: -4vw;
+        opacity: 1;
+    }
+    
+    .tab-img-1:hover .container-s button {
+        top: -2vw;
+        opacity: 1;
+    }
+    .tab-img-1 button {
+        width: 14vw;
+        height: 5vw;
+    }
+}
+
+.tab-img-1 .caption {
+    transition: all 0.1s ease-out;
+}
+
+.tab-img-1 img,
+.tab-img-1 button {
+    transition: all 0.2s ease-out;
+}
+
+.tab-img-1 .caption {
+    top: 0;
+}
+
+.tab-img-1 button {
+    top: 0;
+    opacity: 0;
+}
