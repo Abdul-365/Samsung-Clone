@@ -1,5 +1,5 @@
 # Samsung-Clone
-Responsive website made with the help of Bootstrap.
+A responsive website that replicates the user interface of Samsung’s homepage. The website was built using Bootstrap to ensure that it adapts to different screen sizes and devices.
 
 Makes good use of Bootstrap components such as offcanvas navbar, carousel and pills which have also been customized to make them even better.
 
